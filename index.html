@@ -7,11 +7,22 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="content">Show modal 1</div>
-      <div class="content">Show modal 2</div>
-      <div class="content">Show modal 3</div>
+    <button class="show-modal">Show modal 1</button>
+    <button class="show-modal">Show modal 2</button>
+    <button class="show-modal">Show modal 3</button>
+
+    <div class="modal hidden">
+      <button class="cross">&times;</button>
+      <h1>I'm a modal window</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, itaque
+        ipsa facere magni cumque earum obcaecati nesciunt et, sapiente quisquam
+        aspernatur quo adipisci deleniti corporis ullam hic esse debitis,
+        temporibus vero. Nemo ipsum autem maxime sint, natus asperiores harum
+        beatae quaerat aspernatur? Sapiente, assumenda modi!
+      </p>
     </div>
+    <div class="overlay hidden"></div>
     <script src="script.js"></script>
   </body>
 </html>
