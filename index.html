@@ -4,16 +4,60 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Modal window</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <button class="show-modal">Show modal 1</button>
-    <button class="show-modal">Show modal 2</button>
-    <button class="show-modal">Show modal 3</button>
+    <button class="show-modal btn1">
+      <img class="profile" src="/images/miles-mask.jpg" alt="Miles Morales" />
+      <p>Miles Morales</p>
+    </button>
+    <button class="show-modal btn2">
+      <img class="profile" src="/images/gwen-mask.jpeg" alt="Gwen Stacy" />
+      <p>Gwen Stacy</p>
+    </button>
+    <button class="show-modal btn3">
+      <img class="profile" src="/images/peter-mask.webp" alt="Peter Parker" />
+      <p>Peter Parker</p>
+    </button>
 
-    <div class="modal hidden">
+    <div class="modal modal1 hidden">
       <button class="cross">&times;</button>
-      <h1>I'm a modal window</h1>
+      <div>
+        <img class="character-pic" src="/images/milespic.avif" alt="" />
+      </div>
+      <h1>Hi, I'm Miles Morales!</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, itaque
+        ipsa facere magni cumque earum obcaecati nesciunt et, sapiente quisquam
+        aspernatur quo adipisci deleniti corporis ullam hic esse debitis,
+        temporibus vero. Nemo ipsum autem maxime sint, natus asperiores harum
+        beatae quaerat aspernatur? Sapiente, assumenda modi!
+      </p>
+    </div>
+    <div class="modal modal2 hidden">
+      <button class="cross">&times;</button>
+      <div>
+        <img src="images/gwenpic.webp" class="character-pic" />
+      </div>
+      <h1>Hi, I'm Gwen Stacy!</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, itaque
+        ipsa facere magni cumque earum obcaecati nesciunt et, sapiente quisquam
+        aspernatur quo adipisci deleniti corporis ullam hic esse debitis,
+        temporibus vero. Nemo ipsum autem maxime sint, natus asperiores harum
+        beatae quaerat aspernatur? Sapiente, assumenda modi!
+      </p>
+    </div>
+    <div class="modal modal3 hidden">
+      <button class="cross">&times;</button>
+      <div><img src="images/peter.avif" class="character-pic" /></div>
+      <h1>Hi, I'm Peter Parker!</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, itaque
         ipsa facere magni cumque earum obcaecati nesciunt et, sapiente quisquam

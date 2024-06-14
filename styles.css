@@ -5,50 +5,78 @@
 }
 
 body {
-  font-family: sans-serif;
   color: #333;
   height: 100vh;
-  background: linear-gradient(to top left, #831843, #f472b6);
+  background: linear-gradient(
+    to top left,
+    #2e1065,
+    #3b0764,
+    #581c87,
+    #4a044e,
+    #6b21a8
+  );
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   line-height: 1.5;
   position: relative;
+  font-family: 'Indie Flower', cursive;
 }
 
 h1 {
-  font-size: 25px;
+  font-size: 36px;
   margin-bottom: 20px;
 }
 
 p {
-  font-size: 18px;
+  /* font-size: 20px; */
 }
 
+/* MODAL BUTTONS */
+
 .show-modal {
+  font-family: 'Indie Flower', cursive;
+  font-size: 20px;
   border: none;
   padding: 16px 32px;
   border-radius: 100px;
-  font-size: 20px;
   font-weight: 600;
   cursor: pointer;
-  margin: 50px 20px;
-  background-color: #fff;
-  color: #444;
+  margin: 0 20px;
+  background: linear-gradient(#2e1065, #4c1d95);
+  color: #fff;
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
+
+.profile {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  object-fit: cover;
+}
+
+/* MODAL WINDOW */
 
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 70%;
+  width: 50%;
+
   transform: translate(-50%, -50%);
 
   background-color: white;
-  padding: 60px;
-  border-radius: 5px;
+  padding: 20px;
+  border-radius: 10px;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.3);
   z-index: 10;
+}
+
+.character-pic {
+  width: 100%;
+  border-radius: 10px;
 }
 
 .cross {
@@ -57,8 +85,8 @@ p {
   background: none;
   color: #333;
   position: absolute;
-  top: 12px;
-  right: 20px;
+  top: 5px;
+  right: 10px;
   cursor: pointer;
 }
 
@@ -74,5 +102,5 @@ p {
 }
 
 .hidden {
-  /* display: none; */
+  display: none;
 }
